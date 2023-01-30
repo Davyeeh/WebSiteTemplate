@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* -----------------------------------CABEÇALHO---------------------------------------------------- */
+
+header{
+    width: 100%;
+    height: 10vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    padding: 0 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+nav .logo h1 {
+    color: #fff;
+}
+
+nav .logo h1 span {
+    color: #ff4500;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul li .a::after {
+    content: '';
+
+    display: block;
+    background-color: #ff4500;
+    width: 0;
+    border-radius: 3px;
+    height: .2vw;
+
+    transition: all .3s ease;
+}
+
+ul li .a:hover::after {
+    width: 100%;
+}
+
+.contato {
+    border: 2px solid #ff4500;
+    padding: 5px;
+    border-radius: 8px;
+    /* border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+ */
+    transition: all .3s ease;
+}
+
+.contato:hover {
+    background: #ff4500;
+    color: #fff;
+    /* border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0; */
+}
+
+/* --------------------------------------HOME------------------------------------------------------- */
+
+.home {
+    width: 100%;
+    height: 100%;
+    background: url(./imgs/architect-g71f9ffd4a_1920.jpg) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.home-content .texto {
+    margin-right: 80px;
+    text-align: end;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.home-content .texto p span {
+    color: #ff4500;
+}
+
+.home-content .botao {
+    margin-top: 37px;
+    margin-right: 115px;
+}
+
+.home-content .botao a {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 3px solid #ff4500;
+    border-radius: 8px;
+    height: 60px;
+    width: 350px;
+    cursor: pointer;
+    padding: 15px;
+    
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.home-content .botao a:hover {
+    background: #ff4500;
+}
+
+
+/* ------------------------------------PROJETOS--------------------------------------------------- */
+
+.projetos {
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(153deg, #222222 63.21%, #333333 63.21%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.projetos h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    margin-top: -12vh;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.projetos h1 span {
+    color: #ff4500;
+}
+
+.projetos .projetos-content {
+    height: 400px;
+    width: 100%;
+    /* border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff; */
+    overflow: hidden;
+    text-align: center;
+
+    box-shadow: 0 5px 8px 2px;
+}
+
+.projetos-content input {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    gap: 16px;
+}
+
+.navigation label {
+    margin-top: 30px;
+    width: 70px;
+    height: 20px;
+    border: none;
+    background-color: #ff4500;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.navigation label:hover {
+    background: #fff;
+}
+
+.projetos-content .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slides .slide {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    transition: .6s;
+}
+
+.slides .slide img {
+    width: 50%;
+    height: 100%;
+}
+
+.slides .slide p {
+    height: 100%;
+    width: 50%;
+    background: rgb(255, 69, 0);
+    color: #fff;
+
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slides .slide p br{
+    margin-top: 20px;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -35%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -70%;
+}
+
+
+/* ---------------------------------EQUIPE--------------------------------------------------------- */
+
+
+.equipe {
+    /* position: absolute;
+    top: 1245px;
+    left: 250px; */
+
+    height: 110vh;
+    width: 100%;
+    background: url(./imgs/bg2-orange.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 10vh;
+}
+
+.equipe h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.equipe h1 span {
+    color: #fff;
+}
+
+.cards {
+    margin: 15px 30px 0px 30px;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .func {
+    height: 100%;
+    width: 23%;
+    background-color: rgba( 255, 255, 255, 0.4);
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.func img {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 4px solid white;
+    border-radius: 500px;
+}
+
+.func p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.func .nome {
+    margin-top: -15px;
+    font-weight: 600;
+}
+
+/* --------------------------------------SOBRE---------------------------------------------------- */
+
+.sobre {
+    width: 100%;
+    height: 100vh;
+    padding: 10vh;
+    background: linear-gradient(153deg, #c9c8c8 63.21%, #d8d8d8f3 63.21%);
+
+    display: flex;
+}
+
+.sobre h1 {
+    width: 45%;
+
+    color: #ff4500;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    text-align: center;
+
+    padding-top: 130px;
+    padding-right: 50px;
+}
+
+.sobre .sobre-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 100%;
+    width: 65%;
+}
+
+.sobre-content .blocos1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blocos1 .bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 15vw;
+    height: 30vh;
+
+    background-color: #ff4500;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+    padding: 0 10px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sobre-content .blocos2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blocos2 .bloco {
+    width: 15vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ff4500;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+    padding: 0 10px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* ---------------------------------------SOBRE--------------------------------------------------- */
+
+.contact {
+    width: 100%;
+    height: 110vh;
+    background-color: #ff4500;
+    display: flex;
+    padding: 15vh 50px 50px 50px;
+}
+
+.contact .form {
+    width: 50%;
+    height: 100%;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -5px 5px 3px 1px rgba(0, 0, 0, 0.5);
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form label {
+    color: #ff4500;
+    margin-bottom: -20px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    width: 190px;
+}
+
+.form input {
+    margin-left: 50px;
+    width: 500px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d8d8d8f3;
+
+    padding: 10px 10px;
+    color: #222222;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: all .3s ease;
+}
+
+.form input:focus {
+    box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form textarea {
+    margin-left: 50px;
+    width: 500px;
+    height: 70px;
+
+    background-color: #c9c8c8;
+    color: #222222;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: all .3s ease;
+}
+
+.form textarea:focus {
+    box-shadow: 0 3px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form button {
+    width: 300px;
+    background-color: #ff4500;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin-left: 150px;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.form button:hover {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contact .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 80px 30px 30px 30px;
+
+    font-family: 'Ubuntu', sans-serif;    
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.text p {
+    margin-top: 50px;
+
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* -----------------------------------RODAPE------------------------------------------------------ */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+
+    background: linear-gradient(153deg, #222222 63.21%, #333333 63.21%);
+
+    display: flex;
+    padding: 10vh;
+    color: #fff;
+}
+
+.footer .sociais {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    border-right: 1px solid white;
+}
+
+.sociais .sociais-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sociais img {
+    width: 20px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.sociais a {
+    color: #fff;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: all .3s ease;
+}
+
+.sociais a:hover {
+    opacity: .9;
+}
+
+.footer .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    border-left: 1px solid white;
+}
+
+.options a {
+    color: #fff;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: all .3s ease;
+}
+
+.options a:hover {
+    opacity: .9;
+}
