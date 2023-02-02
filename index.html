@@ -19,171 +19,180 @@
             </div>
 
             <ul>
-                <li><a class="a" href="#">Início</a></li>
-                <li><a class="a"  href="#">Veja nosso projetos</a></li>
-                <li><a class="a" href="#">Equipe</a></li>
-                <li><a class="a" href="#">Sobre</a></li>
-                <li><a class="contato" href="#">Entre em contato</a></li>
+                <li><a class="a" href="#home">Início</a></li>
+                <li><a class="a"  href="#projetos">Veja nosso projetos</a></li>
+                <li><a class="a" href="#equipe">Equipe</a></li>
+                <li><a class="a" href="#sobre">Sobre</a></li>
+                <li><a class="contato" href="#contact">Entre em contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="home">
+    <main>
 
-        <div class="home-content">
-            <div class="texto">
-                <p>Construa<br><span>seu sonho</span><br>com a gente</p>
-            </div>
-    
-            <div class="botao">
-                <a href="#">Faça já seu orçamento</a>
-            </div>
-        </div>
-    </section>
+        <section class="home" id="home">
 
-    <section class="projetos">
-    
-        <h1>Conheça nosso <span>projetos</span></h1>
-    
-        <div class="projetos-content">
-
-            <div class="slides">
-                
-                <input type="radio" name="slide" id="slide1" checked>
-                <input type="radio" name="slide" id="slide2">
-                <input type="radio" name="slide" id="slide3">
-    
-                <div class="slide s1">
-                    <img src="./imgs/slide1.jpg" alt="condominio com casas brancas com árvores pequenas na frente">
-                    <p>Condominios<br>Casas residenciais</p>
+            <div class="home-content">
+                <div class="texto">
+                    <h2>Construa<br><span>seu sonho</span><br>com a gente</h1>
                 </div>
-
-                <div class="slide">
-                    <img src="./imgs/slide2.jpg" alt="prédio alto espelhado">
-                    <p>Prédios<br>Shoppingss</p>
-                </div>
-
-                <div class="slide">
-                    <img src="./imgs/slide3.jpg" alt="mulheres fazendo orçamento imoboliário">
-                    <p>Projetos próprios</p>
-                </div>
-    
-            </div>             
-                
-            </div>
-            <div class="navigation">
-             <label id="label1" for="slide1"></label>
-             <label id="label2" for="slide2"></label>
-             <label id="label3" for="slide3"></label>
-            </div>
-    </section> 
-
-    <section  class="equipe">
-
-        <h1>Veja o que <span>nossa equipe</span> tem a dizer</h1>
-
-        <div class="cards">
-            <div class="func">
-                <img src="./imgs/func1 1.svg" alt="">
-                <p class="nome">Carlos André</p>
-                <p>texto texto texto texto texto texto texto texto texto texto</p>
-            </div>
-            <div class="func">
-                <img src="./imgs/func2 1.svg" alt="">
-                <p class="nome">Marina Mahiko</p>
-                <p>texto texto texto texto texto texto texto texto texto texto</p>
-            </div>
-            <div class="func">
-                <img src="./imgs/func3 1.svg" alt="">
-                <p class="nome">Alexandre Carneiro</p>
-                <p>texto texto texto texto texto texto texto texto texto texto</p>
-            </div>
-            <div class="func">
-                <img src="./imgs/func4 1.svg" alt="">
-                <p class="nome">Ana Khan</p>
-                <p>texto texto texto texto texto texto texto texto texto texto</p>
-            </div>
-        </div>
-    </section>
-    
-    <section class="sobre">
-        <h1>Curiosidades sobre nossa a empresa</h1>
-
-        <div class="sobre-content">
-
-            <div class="blocos1">
-
-                <div class="bloco">
-                    <p>15 anos no ramo de costrução</p>
-                </div>
-                <div class="bloco">
-                    <p>Empresa 100% brasileira</p>
-                </div>
-                <div class="bloco">
-                    <p>1º lugar no na CNEC</p>
-                </div>
-
-            </div>
-
-            <div class="blocos2">
-                
-                <div class="bloco">
-                    <p>Tem 8 filiais espalhadas pela America Latina</p>
-                </div>
-                <div class="bloco">
-                    <p>Referência internacional</p>
-                </div>
-                <div class="bloco">
-                    <p>Única empresa brasileira a concorrer a CMEC</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="contact">
-
         
-        <form class="form" action="">
-            <label for="nome">
-                Nome*
-            </label>
-            <input type="text" name="nome" id="nome" required>
-            
-            <label for="sobrenome">
-                Sobrenome*
-            </label>
-            <input type="text" name="sobrenome" id="sobrenome" required>
-            
-            <label for="email">
-                E-mail*
-            </label>
-            <input type="email" name="email" id="email" required>
-
-            <label for="descricao">
-                Descreva o assunto*
-            </label>
-
-            <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea>
-            
-            <button type="submit">ENVIAR</button>
-        </form>
+                <div class="botao">
+                    <a href="#contact">Faça já seu orçamento</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="projetos" id="projetos">
         
-        <div class="text">
-            <h1>Entre em contato com a gente através do e-mail</h1>
-            <p>Preencha todas as informações corretamente</p>
-        </div>
-    </section>
+            <h2>Conheça nosso <span>projetos</span></h2>
+        
+            <div class="projetos-content">
+    
+                <div class="slides">
+                    
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+        
+                    <div class="slide s1">
+                        <img src="./imgs/slide1.jpg" alt="condominio com casas brancas com árvores pequenas na frente">
+                        <p>Condominios<br>Casas residenciais</p>
+                    </div>
+    
+                    <div class="slide">
+                        <img src="./imgs/slide2.jpg" alt="prédio alto espelhado">
+                        <p>Prédios<br>Shoppingss</p>
+                    </div>
+    
+                    <div class="slide">
+                        <img src="./imgs/slide3.jpg" alt="mulheres fazendo orçamento imoboliário">
+                        <p>Projetos próprios</p>
+                    </div>
+        
+                </div>             
+                    
+                </div>
+                <div class="navigation">
+                 <label id="label1" for="slide1"></label>
+                 <label id="label2" for="slide2"></label>
+                 <label id="label3" for="slide3"></label>
+                </div>
+        </section> 
+    
+        <section  class="equipe" id="equipe">
+    
+            <h2>Veja o que <span>nossa equipe</span> tem a dizer</h2>
+    
+            <div class="cards">
+                <div class="func">
+                    <img src="./imgs/func1 1.svg" alt="">
+                    <p class="nome">Carlos André</p>
+                    <p>texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+                <div class="func">
+                    <img src="./imgs/func2 1.svg" alt="">
+                    <p class="nome">Marina Mahiko</p>
+                    <p>texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+                <div class="func">
+                    <img src="./imgs/func3 1.svg" alt="">
+                    <p class="nome">Alexandre Carneiro</p>
+                    <p>texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+                <div class="func">
+                    <img src="./imgs/func4 1.svg" alt="">
+                    <p class="nome">Ana Khan</p>
+                    <p>texto texto texto texto texto texto texto texto texto texto</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="sobre" id="sobre">
+            <h2>Curiosidades sobre nossa a empresa</h2>
+    
+            <div class="sobre-content">
+    
+                <div class="blocos1">
+    
+                    <div class="bloco">
+                        <p>15 anos no ramo de costrução</p>
+                    </div>
+                    <div class="bloco">
+                        <p>Empresa 100% brasileira</p>
+                    </div>
+                    <div class="bloco">
+                        <p>1º lugar no na CNEC</p>
+                    </div>
+    
+                </div>
+    
+                <div class="blocos2">
+                    
+                    <div class="bloco">
+                        <p>Tem 8 filiais espalhadas pela America Latina</p>
+                    </div>
+                    <div class="bloco">
+                        <p>Referência internacional</p>
+                    </div>
+                    <div class="bloco">
+                        <p>Única empresa brasileira a concorrer a CMEC</p>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <section class="contact" id="contact">
+    
+            
+            <form class="form" action="https://formsubmit.co/daviara.dev.contact@gmail.com" method="POST">
+                
+                <label for="nome">
+                    Nome*
+                </label>
+                <input type="text" name="nome" id="nome" required>
+                
+                <label for="sobrenome">
+                    Sobrenome*
+                </label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+                
+                <label for="email">
+                    E-mail*
+                </label>
+                <input type="email" name="email" id="email" required>
+    
+                <label for="message">
+                    Descreva o assunto*
+                </label>
+    
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                
+                <button type="submit">ENVIAR</button>
+    
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            </form>
+            
+            <div class="text">
+                <h2>Entre em contato com a gente através do e-mail</h2>
+                <p>Preencha todas as informações corretamente</p>
+            </div>
+        </section>
 
-    <section class="footer">
+    </main>
+    
+    
+
+    <footer class="footer">
         <div class="sociais">
             <div class="sociais-links">
                 <img src="./imgs/instagram-logo-fill-svgrepo-com.svg" alt="instagram logo"><a href="">Instagram</a>                
             </div>
-            <div class="sociais-links">
+            <!-- <div class="sociais-links">
                 <img src="./imgs/twitter-logo-fill-svgrepo-com.svg" alt=""><a href="">Twitter</a>
-            </div>
+            </div> -->
             <div class="sociais-links">
                 <img src="./imgs/linkedin-logo-fill-svgrepo-com.svg" alt=""><a href="">Linkedin</a>
             </div>
@@ -199,7 +208,7 @@
             <a href="">Direitos reservados</a>
             <a href="">Politica de privacidade</a>
         </div>
-    </section>
+    </footer>
 
 </body>
 </html>
