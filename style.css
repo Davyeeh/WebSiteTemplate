@@ -308,7 +308,7 @@ ul li .a:hover::after {
 .cards .func {
     height: 100%;
     width: 23%;
-    background-color: rgba( 255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, .3);
     box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 
@@ -630,8 +630,4 @@ ul li .a:hover::after {
 
 .options a:hover {
     opacity: .9;
-}
-
-@media (max-width: 918px) {
-    
 }
